@@ -1,0 +1,25 @@
+import React, { useState } from 'react';
+
+
+function Wesley(props) {
+
+  const [contador, setContador] = useState(0);
+
+  return (
+
+    <div>
+
+      <h1>{props.nome}</h1>
+
+      <p>Contador: {contador}</p>
+
+      <button onClick={() => setContador(contador + 1)}>Aumentar Contador</button>
+
+    </div>
+
+  );
+}
+
+
+
+export default Wesley;
